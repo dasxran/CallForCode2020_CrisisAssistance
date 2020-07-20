@@ -2,26 +2,24 @@
 
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://callforcode.org/slack) [![Website](https://img.shields.io/badge/View-Website-blue)](https://github.com/dasxran/CallForCode2020_CrisisAssistance)
 
+Crisis Assistance is a BOT, ready to help in crisis or disaster related situations. It has access to various data sources and can be interacted via mobile app or website.
+
+![screenshots of example app](/images/screenshots@2x.png)
+
 ## Contents
 
-1. [Short description](#short-description)
-1. [Demo video](#demo-video)
+1. [The idea](#the-idea)
 1. [The architecture](#the-architecture)
-1. [Long description](#long-description)
+1. [Demo video](#demo-video)
 1. [Project roadmap](#project-roadmap)
-1. [Getting started](#getting-started)
-1. [Running the tests](#running-the-tests)
 1. [Live demo](#live-demo)
 1. [Built with](#built-with)
-1. [Contributing](#contributing)
-1. [Versioning](#versioning)
 1. [Authors](#authors)
 1. [License](#license)
-1. [Acknowledgments](#acknowledgments)
 
-## Short description
+## The idea
 
-Crisis Assistance is a BOT ready to help in crisis or disaster related situations. It has access to various data sources and can be interacted via mobile app or website. 
+We have come up with an idea of a BOT which will work as Crisis Assistance in terms of voice communicator, chat communicator and automated Alert system. This bot will effectively communicate during an emergency situation. This Bot will take place of a doctor sometime, sometime teacher, sometime guardian etc. This Bot will be available in real time. It will be accessible from anywhere. People can communicate with BOT in their native language, BOT will translate them into English while transmitting. This BOT will be able to identify the GEO location and share while transmitting the message. The one and only one intension behind it, is save as much lives as possible.
 
 ### What's the problem?
 
@@ -41,26 +39,31 @@ Our idea is to put below features in Crisis Assistance:
 
 Ø  Implement “Alert” feature specific to a place based on Weather Forecast or Pandemic situation. This Alert will provide all advisory information to fight against crisis in well advance.
 
-### The idea
+## Application Features
 
-We have come up with an idea of a BOT which will work as Crisis Assistance in terms of voice communicator, chat communicator and automated Alert system. This bot will effectively communicate during an emergency situation. This Bot will take place of a doctor sometime, sometime teacher, sometime guardian etc. This Bot will be available in real time. It will be accessible from anywhere. People can communicate with BOT in their native language, BOT will translate them into English while transmitting. This BOT will be able to identify the GEO location and share while transmitting the message. The one and only one intension behind it, is save as much lives as possible.
-
-## Demo video
-
-[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
+- This bot will be available from both web and mobile application, so that user can have easy access to the preinstalled mobile app with added features (like alert and push notification) and web app to access from any devices having browser irrespective of operating system.
+- This bot will be able to interact in both chat and voice mode.
+- This bot will also be accessible via call or sms services, so that old feature phone can have access to it.
+- This bot will support all major local or native languages, so that each and every person can use it directly in times of need.
+- This bot will also send alert and tips proactively to the people in crisis affected areas with preventive measurement.
+- This bot will provide requested information in real time based on local community or nearest services availability. Also it will send notification to the nearest nodal points in case of urgency.
 
 ## The architecture
 
-![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
+![Crisis Assistance app](https://github.com/dasxran/CallForCode2020_CrisisAssistance/blob/master/images/architecture.png)
 
 1. The user navigates to the site and uploads a video file.
 2. Watson Speech to Text processes the audio and extracts the text.
 3. Watson Translation (optionally) can translate the text to the desired language.
 4. The app stores the translated text as a document within Object Storage.
 
-## Long description
+### The Node-red Diagram
 
-[More detail is available here](DESCRIPTION.md)
+![Crisis Assistance app](https://github.com/dasxran/CallForCode2020_CrisisAssistance/blob/master/images/Node-red_Crisis%20Assistant_Diagram.png)
+
+## Demo video
+
+[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
 
 ## Project roadmap
 
@@ -71,64 +74,26 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+- NodeJS
 
-```bash
-dnf install wget
-wget http://www.example.com/install.sh
-bash install.sh
+### 1. Install dependencies
+
+```
+git clone https://github.com/dasxran/CallForCode2020_CrisisAssistanc
+cd .\CallForCode2020_CrisisAssistance\src\RN_CrisisAssistance_App\
+npm install
 ```
 
-### Installing
+### 2. Start your app
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be, for example
-
-```bash
-export TOKEN="fffd0923aa667c617a62f5A_fake_token754a2ad06cc9903543f1e85"
-export EMAIL="jane@example.com"
-dnf install npm
-node samplefile.js
-Server running at http://127.0.0.1:3000/
 ```
-
-And repeat
-
-```bash
-curl localhost:3000
-Thanks for looking at Code-and-Response!
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why, if you were using something like `mocha` for instance
-
-```bash
-npm install mocha --save-dev
-vi test/test.js
-./node_modules/mocha/bin/mocha
-```
-
-### And coding style tests
-
-Explain what these tests test and why, if you chose `eslint` for example
-
-```bash
-npm install eslint --save-dev
-npx eslint --init
-npx eslint sample-file.js
+npm start
 ```
 
 ## Live demo
 
-You can find a running system to test at [callforcode.mybluemix.net](http://callforcode.mybluemix.net/)
+You can find a running app to test at [Play Store](https://play.google.com/store/apps/details?id=org.codehunter.ca_app)
+[Node-red app can be found here](https://node-red-crisis-assistant.eu-gb.mybluemix.net/red/).
 
 ## Built with
 
@@ -141,13 +106,9 @@ You can find a running system to test at [callforcode.mybluemix.net](http://call
 * [Google Custom Search](https://developers.google.com/custom-search) - The search engine service
 * [Google Maps](https://maps.google.com/) - The web mapping service
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
 ## Authors
 
-* **Kanika Dutta** - *Initial work*
+* **Kanika Datta** - *Initial work*
 * **Ranjan Kumar Das** - *Initial work*
 
 See also the list of [contributors](https://github.com/dasxran/CallForCode2020_CrisisAssistance/graphs/contributors) who participated in this project.
