@@ -1,10 +1,6 @@
-# Submission name
+# Crisis Assistance (BOT)
 
-[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://callforcode.org/slack) [![Website](https://img.shields.io/badge/View-Website-blue)](https://code-and-response.github.io/Project-Sample/)
-
-A basic GitHub repository example for Call for Code submissions and those projects that join the Code and Response initiative. Not all sections or files are required. You can make this as simple or as in-depth as you need.
-
-*Read this in other languages: [English](README.md), [한국어](README.ko.md), [português](README.pt_br.md).*
+[![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Slack](https://img.shields.io/badge/Join-Slack-blue)](https://callforcode.org/slack) [![Website](https://img.shields.io/badge/View-Website-blue)](https://github.com/dasxran/CallForCode2020_CrisisAssistance)
 
 ## Contents
 
@@ -25,17 +21,29 @@ A basic GitHub repository example for Call for Code submissions and those projec
 
 ## Short description
 
+Crisis Assistance is a BOT ready to help in crisis or disaster related situations. It has access to various data sources and can be interacted via mobile app or website. 
+
 ### What's the problem?
 
-Part of the World Health Organization's guidance on limiting further spread of COVID-19 is to practice social distancing. As a result, schools in most affected areas are taking precautionary measures by closing their facilities. With school-aged children at home for an indeterminate amount of time,  keeping them engaged, entertained, and on top of their education is important.
+As per current situation whole world is threatened by COVID-19. World is fighting against this virus. This is a pandemic situation, not everyone in this world are equally aware of this virus - the do’s and don’ts. COVID-19 definitely crisis, but on top of it there are other crisis getting created by natural disaster. Super cyclone, Earthquake, Flood are some natural calamities happening on every year. We managed those crisis before but now in this CORONA period, situation is much tough. Let’s take a small example – due to recent super cyclone at West Bengal, many trees are uprooted and closed the road. Prior to CORONA, people from disaster management came and cut the trees and clear the path.  During COVID-19, the situation is completely different, here we have to cut the tree keeping social distance. Things become more and more challenging and time consuming. Our Crisis Assistance will play a very vital role here, nearby people will access this app to know alternate way to reach a hospital in case of medical emergency, avoid road where people are more, they can even report that there is road block due to tree falls down.
+
+Let’s think of a different crisis scenario. People live in interior village. Most of them do not have any smart phone, instead of that they have old model phone. Due to flood they lost their house. Tremendous crisis of food. They are completely clueless, how they will communicate with others as they have separated from rest of the world. It’s another type of crisis. Our Crisis Assistance will play a crucial role here. How? People will call helpline number and share their situation and ask for help in their local language. BOT will translate the message to English and share with Nearby People / Government Rescue authority/ NGO who can save them. BOT will share the Geography location at the same time. Benefit, again save those lives.
+
+Another common crisis scenario, an old lady is living alone. She has started fever with throat pain. She does not know what to do next. So first thing he/she will do will open this Crisis Assistance and type the situation. As a result BOT will share Doctors list available for online consultation, medicine home delivery information and nearby Lab details with home sample collection facility.  Yes we can save her even in this crisis situation with right information on right time.
 
 ### How can technology help?
 
-Schools and teachers can continue to engage with their students through virtual classrooms, and even create interactive spaces for classes. As parents face a new situation where they may need to homeschool their children, finding appropriate online resources is important as well.
+Our idea is to put below features in Crisis Assistance:
+
+Ø  Chat Communication feature
+
+Ø  Voice communication feature in Local Language
+
+Ø  Implement “Alert” feature specific to a place based on Weather Forecast or Pandemic situation. This Alert will provide all advisory information to fight against crisis in well advance.
 
 ### The idea
 
-It's imperative that learning and creating can continue when educational institutions have to shift the way they teach in times of crises, such as the COVID-19 pandemic. Providing a set of open source tools, backed by IBM Cloud and Watson Services, will enable educators to more easily make content available for their students.
+We have come up with an idea of a BOT which will work as Crisis Assistance in terms of voice communicator, chat communicator and automated Alert system. This bot will effectively communicate during an emergency situation. This Bot will take place of a doctor sometime, sometime teacher, sometime guardian etc. This Bot will be available in real time. It will be accessible from anywhere. People can communicate with BOT in their native language, BOT will translate them into English while transmitting. This BOT will be able to identify the GEO location and share while transmitting the message. The one and only one intension behind it, is save as much lives as possible.
 
 ## Demo video
 
@@ -56,7 +64,6 @@ It's imperative that learning and creating can continue when educational institu
 
 ## Project roadmap
 
-![Roadmap](roadmap.jpg)
 
 ## Getting started
 
@@ -125,26 +132,25 @@ You can find a running system to test at [callforcode.mybluemix.net](http://call
 
 ## Built with
 
+* [Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant) - Used to build conversational interfaces
+* [Node-RED](https://cloud.ibm.com/developer/appservice/starter-kits/59c9d5bd-4d31-3611-897a-f94eea80dc9f/nodered) - Used to wiring together flows and services
+* [Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) - Used to convert human voices into the text
 * [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
-* [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
-* [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Db2](https://cloud.ibm.com/catalog/services/db2) - The SQL database used
+* [React Native](https://reactnative.dev/) - The mobile application development framework
+* [Google Custom Search](https://developers.google.com/custom-search) - The search engine service
+* [Google Maps](https://maps.google.com/) - The web mapping service
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Kanika Dutta** - *Initial work*
+* **Ranjan Kumar Das** - *Initial work*
 
-See also the list of [contributors](https://github.com/Code-and-Response/Project-Sample/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/dasxran/CallForCode2020_CrisisAssistance/graphs/contributors) who participated in this project.
 
 ## License
 
