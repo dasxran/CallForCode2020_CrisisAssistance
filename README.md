@@ -34,9 +34,7 @@ Another common crisis scenario, an old lady is living alone. She has started fev
 Our idea is to put below features in Crisis Assistance:
 
 Ø  Chat Communication feature
-
 Ø  Voice communication feature in Local Language
-
 Ø  Implement “Alert” feature specific to a place based on Weather Forecast or Pandemic situation. This Alert will provide all advisory information to fight against crisis in well advance.
 
 ## Application Features
@@ -63,10 +61,11 @@ Our idea is to put below features in Crisis Assistance:
 
 ## Demo video
 
-[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
+[![Watch the video](https://github.com/Code-and-Response/Liquid-Prep/blob/master/images/IBM-interview-video-image.png)](#)
 
 ## Project roadmap
 
+...
 
 ## Getting started
 
@@ -74,7 +73,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-- NodeJS
+- [NodeJS](https://nodejs.org/)
 
 ### 1. Install dependencies
 
@@ -92,8 +91,11 @@ npm start
 
 ## Live demo
 
-You can find a running app to test at [Play Store](https://play.google.com/store/apps/details?id=org.codehunter.ca_app)
-[Node-red app can be found here](https://node-red-crisis-assistant.eu-gb.mybluemix.net/red/).
+You can find a running app to test at [Play Store](https://play.google.com/store/apps/details?id=org.codehunter.ca_app).
+
+Node-red app can be found [here](https://node-red-crisis-assistant.eu-gb.mybluemix.net/red/).
+
+[![Get it on Play Store](https://lh3.googleusercontent.com/cjsqrWQKJQp9RFO7-hJ9AfpKzbUb_Y84vXfjlP0iRHBvladwAfXih984olktDhPnFqyZ0nu9A5jvFwOEQPXzv7hr3ce3QVsLN8kQ2Ao=s0)](https://play.google.com/store/apps/details?id=org.codehunter.ca_app)
 
 ## Built with
 
