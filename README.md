@@ -34,7 +34,9 @@ Another common crisis scenario, an old lady is living alone. She has started fev
 Our idea is to put below features in Crisis Assistance:
 
 Ø  Chat Communication feature
+
 Ø  Voice communication feature in Local Language
+
 Ø  Implement “Alert” feature specific to a place based on Weather Forecast or Pandemic situation. This Alert will provide all advisory information to fight against crisis in well advance.
 
 ## Application Features
@@ -50,10 +52,13 @@ Our idea is to put below features in Crisis Assistance:
 
 ![Crisis Assistance app](https://github.com/dasxran/CallForCode2020_CrisisAssistance/blob/master/images/architecture.png)
 
-1. The user navigates to the site and uploads a video file.
+1. The user communicates with Crisis Assistance BOT via mobile app through Text/Audio.
 2. Watson Speech to Text processes the audio and extracts the text.
-3. Watson Translation (optionally) can translate the text to the desired language.
-4. The app stores the translated text as a document within Object Storage.
+3. Mobile app (optionally) can transfer the request to Google Cloud search to get better response.
+4. Could service can identify crisis type and store conversation originated location.
+5. Mobile App Map view plots alert circles based on identified crisis communication count.
+6. Bot suggests some Web pages for the solution in current Crisis.
+7. An web base worldmap (for Authorized people only) plots all the PANIC alerts with location/address.
 
 ### The Node-red Diagram
 
@@ -91,11 +96,11 @@ npm start
 
 ## Live demo
 
-You can find a running app to test at [Play Store](https://play.google.com/store/apps/details?id=org.codehunter.ca_app).
+You can find a running app to test at [Play Store](https://play.google.com/store/apps/details?id=org.codehunter.ca_bot).
 
 Node-red app can be found [here](https://node-red-crisis-assistant.eu-gb.mybluemix.net/red/).
 
-[![Get it on Play Store](https://lh3.googleusercontent.com/cjsqrWQKJQp9RFO7-hJ9AfpKzbUb_Y84vXfjlP0iRHBvladwAfXih984olktDhPnFqyZ0nu9A5jvFwOEQPXzv7hr3ce3QVsLN8kQ2Ao=s0)](https://play.google.com/store/apps/details?id=org.codehunter.ca_app)
+[![Get it on Play Store](https://lh3.googleusercontent.com/cjsqrWQKJQp9RFO7-hJ9AfpKzbUb_Y84vXfjlP0iRHBvladwAfXih984olktDhPnFqyZ0nu9A5jvFwOEQPXzv7hr3ce3QVsLN8kQ2Ao=s0)](https://play.google.com/store/apps/details?id=org.codehunter.ca_bot)
 
 ## Built with
 
