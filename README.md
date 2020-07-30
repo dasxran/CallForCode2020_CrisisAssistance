@@ -66,7 +66,7 @@ Our idea is to put below features in Crisis Assistance:
 
 ## Demo video
 
-[![Watch the video](https://github.com/dasxran/CallForCode2020_CrisisAssistance/blob/master/images/thumbnail.png)](https://youtu.be/uIe6EjJegk0)
+[![Watch the video](https://github.com/dasxran/CallForCode2020_CrisisAssistance/blob/master/images/thumbnail.png)](https://youtu.be/A618Yh0A7K0)
 
 ## Project roadmap
 

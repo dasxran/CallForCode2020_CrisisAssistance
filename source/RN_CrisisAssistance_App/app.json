@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Crisis Assistant (BOT)",
+    "slug": "CrisisAssistance",
+    "privacy": "unlisted",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "facebookAutoInitEnabled": false,
+    "facebookAutoLogAppEventsEnabled": false,
+    "facebookAdvertiserIDCollectionEnabled": false,
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "",
+    "android": {
+      "package": "org.codehunter.ca_bot",
+      "versionCode": 1,
+      "playStoreUrl": "https://play.google.com/store/apps/details?org.codehunter.ca_bot",
+      "config": {
+        "googleMaps": {
+          "apiKey": "************************************"
+        }
+      }
+    },
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#3a81fd",
+      "hidden": false,
+      "translucent": false
+    },
+    "extra": {
+      "node_red": {
+        "endpoints": {
+          "assistant": "https://node-red-crisis-assistant.eu-gb.mybluemix.net/assistant/",
+          "audio_upload": "https://node-red-crisis-assistant.eu-gb.mybluemix.net/upload_post",
+          "marker_count": "https://node-red-crisis-assistant.eu-gb.mybluemix.net/marker_count"
+        }
+      },
+      "google": {
+        "endpoints": {
+          "custom_search": "https://www.googleapis.com/customsearch/v1?"
+        },
+        "cse_engineID": "009771397004513503738:bjqyowy9_xu"
+      }
+    }
+  }
+}
