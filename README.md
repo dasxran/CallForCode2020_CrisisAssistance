@@ -58,7 +58,7 @@ Our idea is to put below features in Crisis Assistance:
 4. Could service can identify crisis type and store conversation originated location.
 5. Mobile App Map view plots alert circles based on identified crisis communication count.
 6. Bot suggests some Web pages for the solution in current Crisis.
-7. An web based worldmap (for Authorized people only) plots all the PANIC alerts with location/address.
+7. A web based worldmap (for Authorized people only) plots all the PANIC alerts with location/address.
 
 ### The Node-red Diagram
 
