@@ -75,31 +75,6 @@ export default class Record extends React.Component {
     });
   };
 
-  _updateScreenForSoundStatus = (status) => {
-    if (status.isLoaded) {
-      this.setState({
-        soundDuration: status.durationMillis,
-        soundPosition: status.positionMillis,
-        shouldPlay: status.shouldPlay,
-        isPlaying: status.isPlaying,
-        rate: status.rate,
-        muted: status.isMuted,
-        volume: status.volume,
-        shouldCorrectPitch: status.shouldCorrectPitch,
-        isPlaybackAllowed: true,
-      });
-    } else {
-      this.setState({
-        soundDuration: null,
-        soundPosition: null,
-        isPlaybackAllowed: false,
-      });
-      if (status.error) {
-        console.log(`FATAL PLAYER ERROR: ${status.error}`);
-      }
-    }
-  };
-
   _updateScreenForRecordingStatus = (status) => {
     if (status.canRecord) {
       this.setState({
@@ -121,11 +96,11 @@ export default class Record extends React.Component {
     this.setState({
       isLoading: true,
     });
-    if (this.sound !== null) {
-      await this.sound.unloadAsync();
-      this.sound.setOnPlaybackStatusUpdate(null);
-      this.sound = null;
-    }
+    // if (this.sound !== null) {
+    //   await this.sound.unloadAsync();
+    //   this.sound.setOnPlaybackStatusUpdate(null);
+    //   this.sound = null;
+    // }
     await Audio.setAudioModeAsync({
       allowsRecordingIOS: true,
       interruptionModeIOS: Audio.INTERRUPTION_MODE_IOS_DO_NOT_MIX,
@@ -197,7 +172,10 @@ export default class Record extends React.Component {
       ) {
         let searchRes = await GoogleSearch(assistantRes.input.text);
 
-        if (searchRes.searchInformation.totalResults != "0") {
+        if (
+          searchRes.searchInformation.totalResults !== undefined &&
+          searchRes.searchInformation.totalResults !== "0"
+        ) {
           let snippet = searchRes.items[0].snippet;
 
           if (snippet.includes("...")) {
@@ -230,17 +208,7 @@ export default class Record extends React.Component {
       playThroughEarpieceAndroid: false,
       staysActiveInBackground: true,
     });
-    const { sound, status } = await this.recording.createNewLoadedSoundAsync(
-      {
-        isLooping: true,
-        isMuted: this.state.muted,
-        volume: this.state.volume,
-        rate: this.state.rate,
-        shouldCorrectPitch: this.state.shouldCorrectPitch,
-      },
-      this._updateScreenForSoundStatus
-    );
-    this.sound = sound;
+
     this.setState({
       isLoading: false,
       isSearching: false,
@@ -358,6 +326,7 @@ export default class Record extends React.Component {
     // console.log("isBotSpeaking:", this.state.isBotSpeaking);
     // console.log("isRecording:", this.state.isRecording);
     // console.log("isSearching:", this.state.isSearching);
+    // console.log("isDialogVisible:", this.state.isDialogVisible);
     // console.log("=============================");
 
     if (!this.state.fontLoaded) {
@@ -429,6 +398,7 @@ export default class Record extends React.Component {
 
     return (
       <View style={styles.container}>
+        <PanicInputBox />
         <View
           style={[
             styles.halfScreenContainer,
@@ -438,7 +408,6 @@ export default class Record extends React.Component {
           ]}
         >
           <View style={styles.recordingContainer}>
-            <PanicInputBox />
             <TouchableHighlight
               underlayColor={BACKGROUND_COLOR}
               style={styles.wrapper}

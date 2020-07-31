@@ -40,7 +40,7 @@ GoogleSearch = async (input) => {
     "&cx=" +
     Constants.manifest.extra.google.cse_engineID +
     "&key=" +
-    Constants.manifest.android.config.googleMaps.apiKey +
+    Constants.manifest.extra.google.cse_apiKey +
     "&q=" +
     encodedValue;
 

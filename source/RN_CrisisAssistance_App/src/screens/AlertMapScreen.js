@@ -175,11 +175,6 @@ export default class screens extends Component {
       };
     };
 
-    // let coordinate = {
-    //   latitude: getBoundingBox(this.state.region)[0],
-    //   longitude: getBoundingBox(this.state.region)[2],
-    // };
-
     const markerCountRes = await fetch(
       Constants.manifest.extra.node_red.endpoints.marker_count,
       {

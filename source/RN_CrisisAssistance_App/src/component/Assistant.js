@@ -54,7 +54,10 @@ MessageRequest = async (input, context = {}) => {
 
     // console.log(JSON.stringify(searchRes));
 
-    if (searchRes.searchInformation.totalResults != "0") {
+    if (
+      searchRes.searchInformation.totalResults !== undefined &&
+      searchRes.searchInformation.totalResults !== "0"
+    ) {
       let snippet = searchRes.items[0].snippet;
 
       // console.log(snippet);
