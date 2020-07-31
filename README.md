@@ -58,7 +58,7 @@ Our idea is to put below features in Crisis Assistance:
 4. Could service can identify crisis type and store conversation originated location.
 5. Mobile App Map view plots alert circles based on identified crisis communication count.
 6. Bot suggests some Web pages for the solution in current Crisis.
-7. An web base worldmap (for Authorized people only) plots all the PANIC alerts with location/address.
+7. An web based worldmap (for Authorized people only) plots all the PANIC alerts with location/address.
 
 ### The Node-red Diagram
 
@@ -84,7 +84,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ```
 git clone https://github.com/dasxran/CallForCode2020_CrisisAssistanc
-cd .\CallForCode2020_CrisisAssistance\src\RN_CrisisAssistance_App\
+cd .\CallForCode2020_CrisisAssistance\source\RN_CrisisAssistance_App\
 npm install
 ```
 
