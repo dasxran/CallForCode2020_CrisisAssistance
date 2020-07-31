@@ -7,7 +7,7 @@ When you're ready to see everything that React provides (or if you want to use y
 Google Cloud Service API Keys can be updated in the app.json config file.
 
 ```	
-	"android": {
+    "android": {
       ...
       "config": {
         "googleMaps": {
@@ -15,7 +15,7 @@ Google Cloud Service API Keys can be updated in the app.json config file.
         }
       }
     },
-	"extra": {
+    "extra": {
       ...
       "google": {
         ...
@@ -31,7 +31,7 @@ Google Cloud Service API Keys can be updated in the app.json config file.
 IBM Cloud Service endpoints can be updated in the app.json config file.
 
 ```	
-	"extra": {
+    "extra": {
       "node_red": {
         "endpoints": {
           "assistant": "https://node-red-crisis-assistant.eu-gb.mybluemix.net/assistant/",
