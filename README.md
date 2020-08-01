@@ -11,7 +11,6 @@ Crisis Assistance is a BOT, ready to help in crisis or disaster related situatio
 1. [The idea](#the-idea)
 1. [The architecture](#the-architecture)
 1. [Demo video](#demo-video)
-1. [Project roadmap](#project-roadmap)
 1. [Live demo](#live-demo)
 1. [Built with](#built-with)
 1. [Authors](#authors)
@@ -68,22 +67,19 @@ Our idea is to put below features in Crisis Assistance:
 
 [![Watch the video](https://github.com/dasxran/CallForCode2020_CrisisAssistance/blob/master/images/thumbnail.png)](https://youtu.be/A618Yh0A7K0)
 
-## Project roadmap
-
-...
-
 ## Getting started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
+- [IBM Cloud Account](https://cloud.ibm.com/)
 - [NodeJS](https://nodejs.org/)
 
 ### 1. Install dependencies
 
 ```
-git clone https://github.com/dasxran/CallForCode2020_CrisisAssistanc
+git clone https://github.com/dasxran/CallForCode2020_CrisisAssistance
 cd .\CallForCode2020_CrisisAssistance\source\RN_CrisisAssistance_App\
 npm install
 ```
@@ -108,17 +104,17 @@ Panic Alert Map can be found [here](https://node-red-crisis-assistant.eu-gb.mybl
 
 * [Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant) - Used to build conversational interfaces
 * [Node-RED](https://cloud.ibm.com/developer/appservice/starter-kits/59c9d5bd-4d31-3611-897a-f94eea80dc9f/nodered) - Used to wiring together flows and services
-* [Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) - Used to convert human voices into the text
+* [Watson Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) - Used to convert human voices into the text
 * [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
-* [Db2](https://cloud.ibm.com/catalog/services/db2) - The SQL database used
+* [IBM Db2](https://cloud.ibm.com/catalog/services/db2) - The SQL database used
 * [React Native](https://reactnative.dev/) - The mobile application development framework
 * [Google Custom Search](https://developers.google.com/custom-search) - The search engine service
 * [Google Maps](https://maps.google.com/) - The web mapping service
 
 ## Authors
 
-* **Kanika Datta** - *Initial work*
-* **Ranjan Kumar Das** - *Initial work*
+* [**Kanika Datta**](https://github.com/kanikadatta) - *Initial work*
+* [**Ranjan Kumar Das**](https://github.com/dasxran) - *Initial work*
 
 See also the list of [contributors](https://github.com/dasxran/CallForCode2020_CrisisAssistance/graphs/contributors) who participated in this project.
 
@@ -127,5 +123,7 @@ See also the list of [contributors](https://github.com/dasxran/CallForCode2020_C
 This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
+- [**Cognizant Hackathon**](https://www.cognizant.com/)
+- [**Call for Code ORG by David Clark Cause**](https://callforcode.org/)
+- [**IBM developer - Call for Code program**](https://developer.ibm.com/callforcode/)
 
-* Based on [Billie Thompson's README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
